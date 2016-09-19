@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="description" content="Observation et étude de l'ionosphère terrestre par le biais des ondes VLF">
+
+<title>Observation et étude de l'ionosphère terrestre par le biais des ondes VLF</title>
+
+
+
+
+
+
+
+<!-- reveal.js: http://lab.hakim.se/reveal-js/ -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/beige.css" id="theme">
+<!--
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/beige.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/beigesmall.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/serif.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/night.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/moon.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/darkgray.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/cbc.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/simula.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/theme/league.css" id="theme">
+-->
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+<!-- Printing and PDF exports -->
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+<style type="text/css">
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    p.caption { width: 80%; font-size: 60%; font-style: italic; text-align: left; }
+    hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .reveal .alert-text-small   { font-size: 80%;  }
+    .reveal .alert-text-large   { font-size: 130%; }
+    .reveal .alert-text-normal  { font-size: 90%;  }
+    .reveal .alert {
+             padding:8px 35px 8px 14px; margin-bottom:18px;
+             text-shadow:0 1px 0 rgba(255,255,255,0.5);
+             border:5px solid #bababa;
+             -webkit-border-radius: 14px; -moz-border-radius: 14px;
+             border-radius:14px;
+             background-position: 10px 10px;
+             background-repeat: no-repeat;
+             background-size: 38px;
+             padding-left: 30px; /* 55px; if icon */
+     }
+     .reveal .alert-block {padding-top:14px; padding-bottom:14px}
+     .reveal .alert-block > p, .alert-block > ul {margin-bottom:1em}
+     /*.reveal .alert li {margin-top: 1em}*/
+     .reveal .alert-block p+p {margin-top:5px}
+     /*.reveal .alert-notice { background-image: url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_notice.png); }
+     .reveal .alert-summary  { background-image:url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_summary.png); }
+     .reveal .alert-warning { background-image: url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_warning.png); }
+     .reveal .alert-question {background-image:url(http://hplgit.github.io/doconce/bundled/html_images/small_gray_question.png); } */
+
+</style>
+
+
+
+<!-- Styles for table layout of slides -->
+<style type="text/css">
+td.padding {
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-right:50px;
+  padding-left:50px;
+}
+</style>
+
+</head>
+
+<body>
+<div class="reveal">
+
+<!-- Any section element inside the <div class="slides"> container
+     is displayed as a slide -->
+
+<div class="slides">
+
+
+
+    
+
+
+
+<section>
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<center><h1 style="text-align: center;">Observation et étude de l'ionosphère terrestre par le biais des ondes VLF</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Ahmed AMMAR, and Hassen GHALILA -->
+
+<center>
+<b>Ahmed AMMAR</b> [1]
+</center>
+
+<center>
+<b>Hassen GHALILA</b> [2]
+</center>
+
+<p>&nbsp;<br>
+<!-- institution(s) -->
+
+<center>[1] <b>Laboratoire de Spectroscopie Atomique, Moléculaire et Applications, Faculté des Sciences de Tunis – Université de Tunis El Manar, Tunis, Tunisie. Email: <a href="mailto:ammarahmed.ph@gmail.com" target="_blank">ammarahmed.ph@gmail.com</a></b></center>
+<center>[2] <b>Laboratoire de Spectroscopie Atomique, Moléculaire et Applications, Faculté des Sciences de Tunis – Université de Tunis El Manar, Tunis, Tunisie.</b></center>
+<br>
+<p>&nbsp;<br>
+<center><h4>18 Juillet 2016</h4></center> <!-- date -->
+<br>
+</section>
+
+
+<section>
+<h1 id="___sec0">Nos radiotélescopes </h1>
+
+<ul>
+<p><li> <font color="red">SID MONITOR:</font> <font color="red">S</font>udden <font color="red">I</font>onospheric <font color="red">D</font>isturbance <font color="red">MONITOR</font>.</li>
+<p><li> <font color="red">AWESOME:</font> <font color="red">A</font>tmospheric <font color="red">W</font>eather <font color="red">E</font>lectromagnetic <font color="red">S</font>ystem of <font color="red">O</font>bservation, <font color="red">M</font>odeling, and <font color="red">E</font>ducation.</li>
+</ul>
+<p>
+
+<center><p><img src="media/recepteurs.png" align="bottom" height=600></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec1">Bande de réception </h1>
+Les ondes ELF (Extremely Low Frequencies) et VLF (Very Low Frequencies) constituent la partie du spectre électromagnétique réspectivement entre 30-3000 Hz et entre 3-30 kHz. Il jouent un rôle très important dans la communication et les systèmes de navigation internationale.
+<center><p><img src="media/vlf_range.jpg" align="bottom" ></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec2">Ionosphère terrestre </h1>
+L’ionosphère est une région de l’atmosphère qui s’étend à partir d’une altitude d’environ 60 jusqu’au plus que 1000
+km dans laquelle il existe un nombre très variable d’électrons et d’ions libres. La présence de ces particules
+chargées fait de cette région un bon conducteur électrique qui réfléchit les ondes électromagnétiques sur une large bande de fréquences.
+
+<p>
+<center><p><img src="media/atmosphere.png" align="bottom" height=600></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec3">Pourquoi l'étude de l'ionosphère terrestre est important? </h1>
+
+<p>
+<center><p><img src="media/importance_vlf.png" align="bottom" height=500></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec4">Localisation des émetteurs VLF étulisés dans notre recherche </h1>
+Les ondes VLF, transportant des perturbations ionosphèriques, sont rayonnées
+par différents émetteurs VLF actuellement en service en plusieurs points de la planète.
+<center><p><img src="media/transmitters.2.png" align="bottom" height=550 ></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec5">Activité solaire </h1>
+
+<p>
+<center><p><img src="media/X2-26-10-2014.gif" align="bottom" height=700></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec6">Alternance jour/nuit et alternance des saisons </h1>
+
+<p>
+<center><p><img src="media/signal_vlf.png" align="bottom" width=1000 height=600></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec7">Éclipse solaire totale de 20 Mars 2015 </h1>
+
+<p>
+<center><p><img src="media/eclipseGQDandNRK.png" align="bottom" ></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec8">Observation de l'éclipse solaire totale de 20 Mars 2015 </h1>
+
+<p>
+<center><p><img src="media/signaleclipse" align="bottom" height=600></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec9">Activité des orages </h1>
+<center><p><img src="media/archive_9_image.gif" align="bottom" height=700></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec10">Les éclairs comme des émetteurs VLF naturels  </h1>
+<font color="red"><b>Les éclairs</b></font> peuvent être assimilés à <font color="red"><b>des antennes</b></font> qui rayonnent sur des très larges spectre, dont une grande partie est dans les Trés Basses Fréquences <font color="red"><b>(TBF)</b></font>.
+
+<p>
+<center><p><img src="media/lightning_energy.png" align="bottom" width=800></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec11">Observation des tweeks à Tunis  </h1>
+<center><p><img src="media/tweeks.png" align="bottom" height=700></p></center>
+</section>
+
+
+<section>
+<h1 id="___sec12">Le son VLF de la Terre </h1>
+
+<div>
+<video  loop controls width='1200' height='700' preload='none'>
+    <source src='media/specProject.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+</div>
+<p><em></em></p>
+
+<!-- Issue warning if in a Safari browser -->
+<script language="javascript">
+if (!!(window.safari)) {
+  document.write("<div style=\"width: 95%%; padding: 10px; border: 1px solid #100; border-radius: 4px;\"><p><font color=\"red\">The above movie will not play in Safari - use Chrome, Firefox, or Opera.</font></p></div>")}
+</script>
+</section>
+
+
+
+</div> <!-- class="slides" -->
+</div> <!-- class="reveal" -->
+
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+    // Display navigation controls in the bottom right corner
+    controls: true,
+
+    // Display progress bar (below the horiz. slider)
+    progress: true,
+
+    // Display the page number of the current slide
+    slideNumber: true,
+
+    // Push each slide change to the browser history
+    history: false,
+
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
+
+    // Enable the slide overview mode
+    overview: true,
+
+    // Vertical centering of slides
+    //center: true,
+    center: false,
+
+    // Enables touch navigation on devices with touch input
+    touch: true,
+
+    // Loop the presentation
+    loop: false,
+
+    // Change the presentation direction to be RTL
+    rtl: false,
+
+    // Turns fragments on and off globally
+    fragments: true,
+
+    // Flags if the presentation is running in an embedded mode,
+    // i.e. contained within a limited portion of the screen
+    embedded: false,
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value can be overwritten
+    // by using a data-autoslide attribute on your slides
+    autoSlide: 0,
+
+    // Stop auto-sliding after user input
+    autoSlideStoppable: true,
+
+    // Enable slide navigation via mouse wheel
+    mouseWheel: false,
+
+    // Hides the address bar on mobile devices
+    hideAddressBar: true,
+
+    // Opens links in an iframe preview overlay
+    previewLinks: false,
+
+    // Transition style
+    transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Transition speed
+    transitionSpeed: 'default', // default/fast/slow
+
+    // Transition style for full page slide backgrounds
+    backgroundTransition: 'default', // default/none/slide/concave/convex/zoom
+
+    // Number of slides away from the current that are visible
+    viewDistance: 3,
+
+    // Parallax background image
+    //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+    // Parallax background size
+    //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+
+    theme: Reveal.getQueryHash().theme, // available themes are in reveal.js/css/theme
+    transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/none
+
+});
+
+Reveal.initialize({
+    dependencies: [
+        // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+        { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+        // Interpret Markdown in <section> elements
+        { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+        // Syntax highlight for <code> elements
+        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+        // Zoom in and out with Alt+click
+        { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+
+        // Speaker notes
+        { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+        // Remote control your reveal.js presentation using a touch device
+        //{ src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+        // MathJax
+        //{ src: 'reveal.js/plugin/math/math.js', async: true }
+    ]
+});
+
+Reveal.initialize({
+
+    // The "normal" size of the presentation, aspect ratio will be preserved
+    // when the presentation is scaled to fit different resolutions. Can be
+    // specified using percentage units.
+    width: 1570,  // original: 960,
+    height: 1000,
+
+    // Factor of the display size that should remain empty around the content
+    margin: 0.1,
+
+    // Bounds for smallest/largest possible scale to apply to content
+    minScale: 0.2,
+    maxScale: 1.0
+
+});
+</script>
+
+
+<div style="position: absolute; bottom: 0px; left: 0; margin-left: 0px">
+<img src="media/logoLSAMA4.png">
+</div>
+
+
+
+</body>
+</html>
